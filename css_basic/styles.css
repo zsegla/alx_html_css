@@ -1,22 +1,53 @@
+/* Flexbox layout rules */
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  height: 100vh; /* optional: ensures body takes full height */
+  height: 100vh;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  flex: auto; /* allows <main> to grow and fill available space */
+  flex: auto;
 }
 
 article {
-  flex: 2; /* takes 2/3 of the row */
+  flex: 2;
   overflow-y: auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
 }
 
 aside {
-  flex: 1; /* takes 1/3 of the row */
+  flex: 1;
   overflow-y: auto;
+  padding: 1rem;
+  background-color: #e3e3e3;
+}
+
+/* Optional styling */
+header {
+  background-color: #4f464600;
+  color: white;
+  padding: 1rem 0;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
 }
