@@ -1,0 +1,46 @@
+body {
+    background-image: url("images/Object.png");
+}
+
+header {
+    width: 100%; /* Ensures the header spans the full width */
+    box-sizing: border-box; /* Includes padding in the total width */
+    padding: 10px 0; /* Adds some vertical padding for spacing */
+    /* No background-color or text color for neutrality, as per previous request */
+}
+
+/* Navigation Bar Styling - The core of the layout */
+nav {
+    display: flex; /* Enables Flexbox for arranging children (logo and ul) */
+    justify-content: space-between; /* Pushes the logo to the far left and the ul to the far right */
+    align-items: center; /* Vertically centers the logo and the navigation list */
+
+    max-width: 1200px; /* Sets a maximum width for your navigation content */
+    margin: 0 auto; /* Centers the navigation bar horizontally on the page */
+    padding: 0 20px; /* Adds horizontal padding inside the nav to prevent content from touching edges */
+}
+
+/* Logo Styling */
+nav img {
+    height: 30px; /* Adjust the height of your logo as needed */
+    /* If you want to visualize the "LOGO" box from the image */
+    padding: 5px 10px; /* Example padding */
+}
+
+/* Navigation List Styling */
+nav ul {
+    list-style: none; /* Removes default bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Makes the list items arrange horizontally */
+    gap: 50px; /* Adds space between the navigation items (links) */
+
+}
+
+/* Navigation List Item (Link) Styling */
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Removes the default underline from links */
+    text-transform: uppercase; /* Converts link text to uppercase */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
