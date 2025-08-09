@@ -1,7 +1,6 @@
 body {
     background-image: url("images/Object.png");
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    
 }
 
 header {
@@ -16,7 +15,6 @@ nav {
     display: flex; /* Enables Flexbox for arranging children (logo and ul) */
     justify-content: space-between; /* Pushes the logo to the far left and the ul to the far right */
     align-items: center; /* Vertically centers the logo and the navigation list */
-
     max-width: 1200px; /* Sets a maximum width for your navigation content */
     margin: 0 auto; /* Centers the navigation bar horizontally on the page */
     padding: 0 20px; /* Adds horizontal padding inside the nav to prevent content from touching edges */
@@ -39,7 +37,6 @@ nav ul {
     display: flex; /* Makes the list items arrange horizontally */
     gap: 50px; /* Adds space between the navigation items (links) */
     font-size: 0.7rem;
-
 }
 
 /* Navigation List Item (Link) Styling */
@@ -81,7 +78,6 @@ main > section:first-child > div:first-child span {
     gap : 3rem;
     letter-spacing: 1px;
     font-weight: bold;
-    
 }
 
 main > section:first-child > div:first-child button {
@@ -95,10 +91,9 @@ main > section:first-child > div:first-child button {
     margin-top: 1.5rem;
     cursor: pointer;
     text-transform: uppercase;
-    box-shadow: 
-   inset 0 0 0 2px #C271FF,  /* Purple border */
-   0 4px 6px rgba(0, 0, 0, 0.1),  /* Existing subtle shadow */
-   0 2px 4px rgba(0, 0, 0, 0.3);  /* New black shadow */
+    box-shadow: inset 0 0 0 2px #C271FF,  /* Purple border */
+                0 4px 6px rgba(0, 0, 0, 0.1),  /* Existing subtle shadow */
+                0 2px 4px rgba(0, 0, 0, 0.3);  /* New black shadow */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -106,6 +101,7 @@ main > section:first-child > div:first-child button:hover {
     background-color: #9C4BFF;
     transform: scale(1.05)
 }
+
 /* --------------------------------part-3---------------------------------------- */
 /* "Learn from the pros" Section */
 main > section > div {
@@ -120,10 +116,12 @@ main > section > div h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
+
 main > section > div h2 span {
     color: #C271FF; /* Purple matching the button */
     font-weight: bold;
 }
+
 /* Grid Layout for Pros */
 main > section > div > div {
     display: flex;
@@ -145,7 +143,6 @@ main > section > div > div > div img {
     border-radius: 50%; /* Circular images */
     object-fit: cover;
     margin-bottom: 0rem;
-
 }
 
 main > section > div > div > div h3 {
@@ -161,6 +158,7 @@ main > section > div > div > div p {
     line-height: 1.4;
     margin-top: 0;
 }
+
 /* -----------------------part-4------------------------- */
 /* Testimonial Section - Scoped to avoid clashes */
 main > section:nth-of-type(2) {  /* Targets ONLY the 2nd section in main */
@@ -196,7 +194,6 @@ main > section:nth-of-type(2) blockquote {
     position: relative;
     margin-right: 10rem; /* Adjusted for spacing */
     text-align: justify;
-    
 }
 
 /* Oversized quote mark */
@@ -231,12 +228,11 @@ main section:nth-of-type(3) h2 {
     font-size: 2.5em; /* Sets the font size to 2.5 times the root font size */
     margin-bottom: 40px; /* Adds 40px of space below the heading */
     color: #000; /* Sets the default text color to black */
-    font-weight: normal; /* Makes the text thin by default */
+    font-weight: 10; /* Makes the text thin by default */
     text-align: center; /* Centers the text horizontally */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 3rem;
     width: 100%; /* Ensures the heading takes full width */
-
 }
 
 main section:nth-of-type(3) h2 span {
@@ -251,6 +247,7 @@ main section:nth-of-type(3) {
     gap: 20px; /* Adds space between the items */
     padding: 20px; /* Adds padding around the section */
 }
+
 main section:nth-of-type(3) .column {
     padding: 20px; /* Adds padding inside the column */
     width: 300px; /* Sets a fixed width for each column */          
@@ -261,25 +258,30 @@ main section:nth-of-type(3) .column {
 }
 
 .star-rating {
-    display: flex; /* Enables Flexbox for star icons */
-    align-items: left; /* Vertically centers the stars */
-    flex-direction: row;
-    justify-content: left; /* Centers the stars horizontally */
-    gap: 1px; /* Adds space between the stars */
+    display: flex; /* Enables Flexbox for star icons and text */
+    align-items: center; /* Vertically centers the stars and text */
+    justify-content: flex-start; /* Aligns to the left */
+    gap: 2px; /* Small space between stars */
     margin-top: 10px; /* Adds space above the star rating */
-    size: 1rem;
+    font-size: 0.8rem; /* Makes everything smaller */
+}
+
+.star-rating div {
+    color: hsla(271, 82%, 67%, 0.99); /* Gold color for the stars */
+    font-size: 0.8rem; /* Sets the size of the stars */
+}
+
+.star-rating p {
+    margin: 0; /* Removes default paragraph margins */
+    margin-left: 10px; /* Space between stars and time */
+    font-size: 0.8rem; /* Small font size */
+    color: #979292; /* Gray color for time */
 }
 
 main section:nth-of-type(3) img {
     width: 100%; /* Makes the image responsive */
     height: auto; /* Maintains aspect ratio */
     margin-bottom: 10px; /* Adds space below the image */
-}
-
-.star-rating div {
-    color: hsla(271, 82%, 67%, 0.99); /* Gold color for the stars */
-    font-size: 1.2rem; /* Sets the size of the stars */
-    flex-direction: row;
 }
 
 main section:nth-of-type(3) .column h3 {
@@ -290,9 +292,10 @@ main section:nth-of-type(3) .column h3 {
     font-weight: bold; /* Makes the heading bold */
     text-align: left;
 }
+
 .column img.small-image {
-  width: 20% !important;
-  text-align: left;
+    width: 20% !important;
+    text-align: left;
 }
 
 main section:nth-of-type(3) p {
@@ -309,9 +312,94 @@ main section:nth-of-type(3) div {
     align-items: left; /* Centers items horizontally */
     justify-content: left; /* Centers items vertically */
 }
+
 main section:nth-of-type(3) div h4 {
     font-size: 1rem; /* Sets the font size for subheadings */
     color: hsla(271, 82%, 67%, 0.99); /* Medium gray color for the subheading */
     margin-top: 5px; /* Adds space above the subheading */
     font-weight: normal; /* Makes the text normal weight */
+}
+
+/* ---------------------------Part-6------------------------------- */
+/* Free Membership Section Styling */
+main > section:nth-of-type(4) {
+  background-color: #0A1525; /* Dark navy background */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  /* Remove the conflicting flex-direction: row */
+}
+
+main > section:nth-of-type(4) h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 60px;
+  text-align: center;
+  width: 100%; /* Ensures the heading takes full width */
+  color: white;
+}
+
+main > section:nth-of-type(4) h2 span:first-child {
+  color: #C271FF; /* Purple color for "Free" */
+  font-weight: normal;
+}
+
+main > section:nth-of-type(4) > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin-bottom: 40px; /* Add space between cards and button */
+}
+
+main > section:nth-of-type(4) > div > div {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section:nth-of-type(4) img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(240deg); /* Makes images purple */
+}
+
+main > section:nth-of-type(4) h3 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: white;
+  font-weight: bold;
+}
+
+main > section:nth-of-type(4) p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin: 0;
+}
+
+main > section:nth-of-type(4) button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(194, 113, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+main > section:nth-of-type(4) button:hover {
+  background-color: #A845FF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(194, 113, 255, 0.6);
 }
